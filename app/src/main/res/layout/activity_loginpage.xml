@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ea9ba2"
+    tools:context=".loginpage">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Already \n have an \n Account ?"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="58dp"
+        />
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img2"
+        android:id="@+id/img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="180dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="12dp"
+        android:layout_height="580dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#b8475d"
+        >
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="173dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="68dp"
+        android:background="#b8475d"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img">
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="280dp"
+        android:layout_marginHorizontal="25dp"
+        android:hint="Email"
+        android:id="@+id/EmailId"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintTop_toBottomOf="@id/EmailId"
+        android:layout_marginTop="40dp"
+        android:hint="Password"
+        android:id="@+id/password"
+        />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/teal_200"
+        android:text="Login"
+        android:textSize="20sp"
+        app:backgroundTint="#ff0a54" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/button1"
+        android:layout_marginHorizontal="45dp"
+        android:text="New User? Register Now"
+        android:textSize="28sp"
+        android:layout_marginTop="25dp"
+        android:textColor="#ff0a54"
+        android:id="@+id/registerText"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

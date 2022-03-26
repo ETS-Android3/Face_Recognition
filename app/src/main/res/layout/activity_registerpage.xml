@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ea9ba2"
+    tools:context=".registerpage">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/img2"
+        android:layout_marginLeft="180dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Here's \n your first \n step with \n us!"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="58dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="30dp"
+        android:background="#ced4da"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/nameEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="20dp"
+                android:hint="Name"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/mailEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameEntry"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="30dp"
+                android:hint="Email"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/passwordEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mailEntry"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="30dp"
+                android:hint="Password"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/password2Entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passwordEntry"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="30dp"
+                android:hint="Confirm Password"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/loginText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/teal_200"
+                android:text="Register"
+                android:textSize="20sp"
+                app:backgroundTint="#ff0a54" />
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Already Have an account?"
+                android:textColor="#ff0a54"
+                android:textSize="25sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
