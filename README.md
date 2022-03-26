@@ -2,8 +2,6 @@
 
 A minimalistic Face Recognition module which can be easily incorporated in any Android project.
 
-## [Playstore Link](https://play.google.com/store/apps/details?id=com.atharvakale.facerecognition)
-
 ## Key Features 
 - Fast and very accurate.
 - No re-training required to add new Faces.
@@ -26,7 +24,7 @@ A minimalistic Face Recognition module which can be easily incorporated in any A
 Use Import from Version Control in Android Studio or Clone repo and open the project in Android Studio.
 
 ```bash
-git clone https://github.com/atharvakale31/Face_Recognition_Android.git
+git clone https://github.com/RohanRay015/Hackthon.git
 ```
 Application file : [Face_Recognition.apk](https://drive.google.com/file/d/1l1ldvOUkI2y8WIq2IowxEiiAdhU2twYH/view?usp=sharing)
 
