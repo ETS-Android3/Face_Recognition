@@ -63,27 +63,6 @@
         android:text="search"
         android:id="@+id/searchBtn"
         />
-
-    <!--    <Button-->
-    <!--        android:id="@+id/updateBtn"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="35dp"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        android:text="update"-->
-    <!--        android:layout_marginLeft="5dp"-->
-    <!--        app:layout_constraintStart_toEndOf="@+id/searchBtn"-->
-    <!--        app:layout_constraintRight_toLeftOf="@id/deleteBtn"-->
-    <!--        />-->
-    <!--    <Button-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="35dp"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintLeft_toRightOf="@id/updateBtn"-->
-    <!--        app:layout_constraintRight_toLeftOf="@id/viewBtn"-->
-    <!--        android:text="delete"-->
-    <!--        android:layout_marginLeft="5dp"-->
-    <!--        android:id="@+id/deleteBtn"-->
-    <!--        />-->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="35dp"
@@ -103,24 +82,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:id="@+id/searchIcon"
         app:layout_constraintBottom_toTopOf="@id/searchBtn" />
-    <!--    <ImageView-->
-    <!--        android:layout_width="70dp"-->
-    <!--        android:layout_height="70dp"-->
-    <!--        android:src="@drawable/update"-->
-    <!--        android:layout_marginLeft="40dp"-->
-    <!--        android:background="#e85d04"-->
-    <!--        app:layout_constraintLeft_toRightOf="@id/searchIcon"-->
-    <!--        android:id="@+id/updateIcon"-->
-    <!--        app:layout_constraintBottom_toTopOf="@id/searchBtn" />-->
-    <!--    <ImageView-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:src="@drawable/delete"-->
-    <!--        android:layout_marginLeft="40dp"-->
-    <!--        android:background="#e85d04"-->
-    <!--        app:layout_constraintLeft_toRightOf="@id/updateIcon"-->
-    <!--        android:id="@+id/deleteIcon"-->
-    <!--        app:layout_constraintBottom_toTopOf="@id/searchBtn" />-->
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

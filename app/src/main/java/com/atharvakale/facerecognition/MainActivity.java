@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView face_preview;
     Interpreter tfLite;
     TextView reco_name,preview_info;
-    Button recognize,camera_switch, actions;
+    Button recognize,camera_switch, actions , form;
     ImageButton add_face;
     CameraSelector cameraSelector;
     boolean start=true,flipX=false;
@@ -122,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
         registered=readFromSP(); //Load saved faces from memory when app starts
         setContentView(R.layout.activity_main);
         face_preview =findViewById(R.id.imageView);
+        form = findViewById(R.id.form);
         reco_name =findViewById(R.id.textView);
         preview_info =findViewById(R.id.textView2);
         add_face=findViewById(R.id.imageButton);
@@ -214,6 +215,14 @@ public class MainActivity extends AppCompatActivity {
                 addFace();
             }
         }));
+
+        form.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext() , form.class);
+                startActivity(intent);
+            }
+        });
 
 
         recognize.setOnClickListener(new View.OnClickListener() {
