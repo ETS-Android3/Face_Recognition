@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ea9ba2"
+    android:background="@drawable/register"
     tools:context=".registerpage">
 
     <ImageView
@@ -13,39 +13,13 @@
         android:src="@drawable/img2"
         android:layout_marginLeft="180dp"
         />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Here's \n your first \n step with \n us!"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="58dp"
-        />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="180dp"
-        android:layout_marginLeft="30dp"
-        android:background="#ced4da"
-        >
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="9dp"
-            android:layout_centerHorizontal="true"
-            android:background="@color/white">
 
             <EditText
                 android:id="@+id/nameEntry"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20sp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="220dp"
                 android:hint="Name"
                 android:textSize="16sp" />
 
@@ -104,11 +78,6 @@
                 android:text="Already Have an account?"
                 android:textColor="#ff0a54"
                 android:textSize="25sp" />
-
-
-        </RelativeLayout>
-
-    </RelativeLayout>
 
 
 </RelativeLayout>
