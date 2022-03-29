@@ -1,5 +1,6 @@
 package com.atharvakale.facerecognition;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,9 +11,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Arrays;
+
 public class registerpage extends AppCompatActivity {
 
-    EditText nameEntry , EmailEntry , password , confirmPassword;
+    EditText nameEntry , EmailEntry , password , confirmPassword , Phone;
     Button register;
     TextView LoginText;
 
@@ -49,8 +52,21 @@ public class registerpage extends AppCompatActivity {
             public void onClick(View view) {
                 String Name = nameEntry.getText().toString().trim();
                 String Email = EmailEntry.getText().toString().trim();
+                Email=Email.toLowerCase();
                 String Password = password.getText().toString().trim();
                 String ConfirmPassword = confirmPassword.getText().toString().trim();
+
+                Transaction transaction1=new Transaction(Name, Email, Password,100L);
+                Transaction transaction2 =new Transaction(Name, Email, Password,100L);
+                Transaction transaction3 = new Transaction(Name, Email, Password,100L);
+                Transaction transaction4 =new Transaction(Name, Email, Password,100L);
+
+                Block firstBlock = new Block(0, Arrays.asList(transaction1, transaction2));
+                System.out.println(firstBlock.hashCode());
+                Block secondBlock = new Block(firstBlock.hashCode(), Arrays.asList(transaction3));
+                System.out.println(secondBlock.hashCode());
+                Block thirdBlock = new Block(secondBlock.hashCode(), Arrays.asList(transaction4));
+                System.out.println(thirdBlock.hashCode());
 
 
                 if(Name.equals("") || Email.equals("") || Password.equals("") || ConfirmPassword.equals(""))
@@ -66,7 +82,9 @@ public class registerpage extends AppCompatActivity {
                         user.setPassword(password.getText().toString().trim());
                         database.addUser(user);
 
-                        Toast.makeText(registerpage.this, "Registration Successfull", Toast.LENGTH_SHORT).show();
+
+                      Toast.makeText(registerpage.this, "Registration Successfull", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(registerpage.this, "This is ur "+secondBlock.hashCode()+" hash code", Toast.LENGTH_LONG).show();
 
                         Intent intent = new Intent(registerpage.this , loginpage.class);
                         startActivity(intent);

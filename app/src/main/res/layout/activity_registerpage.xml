@@ -33,11 +33,23 @@
                 android:hint="Email"
                 android:textSize="16sp" />
 
+         <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mailEntry"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="30dp"
+            android:hint="Phone No."
+            android:textSize="16sp" />
+
+
+
             <EditText
                 android:id="@+id/passwordEntry"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/mailEntry"
+                android:layout_below="@id/phone"
                 android:layout_marginHorizontal="20sp"
                 android:layout_marginTop="30dp"
                 android:hint="Password"

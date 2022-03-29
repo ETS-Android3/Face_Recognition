@@ -25,11 +25,12 @@ public class Database extends SQLiteOpenHelper {
     private static final String COLUMN_USER_NAME = "user_name";
     private static final String COLUMN_USER_EMAIL = "user_email";
     private static final String COLUMN_USER_PASSWORD = "user_password";
+    private static final String COLUMN_USER_PHONE = "user_phone";
 
     //create sql table
     private String CREATE_USER_TABLE = "CREATE TABLE "+ TABLE_USER + "("
             + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_USER_NAME + " TEXT,"
-            + COLUMN_USER_EMAIL + " TEXT," + COLUMN_USER_PASSWORD + " TEXT"+")";
+            + COLUMN_USER_EMAIL + " TEXT," + COLUMN_USER_PASSWORD + " TEXT , "+ COLUMN_USER_PHONE +")";
 
     //Drop SQL table
     private String DROP_USER_TABLE = "DROP TABLE IF EXISTS "+TABLE_USER;

@@ -99,7 +99,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginHorizontal="45dp"
         android:layout_marginBottom="10dp"
-        android:text="Search With AI Face Recognizxation"
+        android:text="Search With AI Face Recognize"
         app:layout_constraintLeft_toLeftOf="parent"
         android:id="@+id/face"
         app:layout_constraintBottom_toBottomOf="parent"
