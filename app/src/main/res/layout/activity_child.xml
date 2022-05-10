@@ -4,54 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/child"
     tools:context=".child">
 
     <TextView
+        android:id="@+id/intro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="45dp"
-        android:text="Enter details here"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/autour_one"
         android:gravity="center"
+        android:text="Enter details here"
+        android:textColor="@color/black"
         android:textSize="35sp"
         android:textStyle="bold"
-        android:textColor="@color/white"
-        android:id="@+id/intro"
-        />
+
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/intro"
         android:layout_marginHorizontal="45dp"
-        android:layout_marginTop="65dp"
-        android:textColor="@color/white"
+        android:layout_marginTop="150dp"
+        android:textColor="@color/black"
         android:hint="Enter name"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/black"
         android:id="@+id/name"
+        android:fontFamily="@font/autour_one"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/name"
         android:layout_marginHorizontal="45dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:layout_marginTop="15dp"
         android:hint="Enter gender"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/black"
         android:id="@+id/gender"
+        android:fontFamily="@font/autour_one"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@id/gender"
         android:layout_marginHorizontal="45dp"
         android:layout_marginTop="15dp"
         android:hint="Enter age"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/black"
         android:id="@+id/age"
+        android:fontFamily="@font/autour_one"
         />
 
     <Button
@@ -62,6 +66,8 @@
         android:layout_marginLeft="5dp"
         android:text="search"
         android:id="@+id/searchBtn"
+        android:background="@drawable/round_bg"
+        app:backgroundTint="#ff0a54"
         />
     <Button
         android:layout_width="wrap_content"
@@ -70,6 +76,8 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="5dp"
         android:text="view"
+        android:background="@drawable/round_bg"
+        app:backgroundTint="#ff0a54"
         android:id="@+id/viewBtn"
         />
 
@@ -78,7 +86,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_person_search_24"
         android:layout_marginLeft="12dp"
-        android:background="#e85d04"
+        android:background="#a2d2ff"
         app:layout_constraintLeft_toLeftOf="parent"
         android:id="@+id/searchIcon"
         app:layout_constraintBottom_toTopOf="@id/searchBtn" />
@@ -88,22 +96,23 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_preview_24"
         android:layout_marginRight="12dp"
-        android:background="#e85d04"
+        android:background="#a2d2ff"
         app:layout_constraintRight_toRightOf="parent"
         android:id="@+id/viewIcon"
         app:layout_constraintBottom_toTopOf="@id/searchBtn" />
 
     <Button
+        android:id="@+id/face"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginHorizontal="45dp"
         android:layout_marginBottom="10dp"
+        android:background="@drawable/round_bg"
+        app:backgroundTint="#ff0a54"
         android:text="Search With AI Face Recognize"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:id="@+id/face"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

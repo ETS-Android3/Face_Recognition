@@ -36,6 +36,8 @@ public class form extends AppCompatActivity {
                 String Phone = phoneEntry.getText().toString().trim();
                 String Location = locationEntry.getText().toString().trim();
 
+
+
                 Boolean checkData = userForm.InsertData(Name , Email , Phone , Location);
 
                 if(Name.equals("") || Email.equals("") || Location.equals("")  || Phone.equals(""))

@@ -42,14 +42,14 @@
     </RelativeLayout>
 
     <EditText
+        android:id="@+id/EmailId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="280dp"
         android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="272dp"
         android:hint="Email"
-        android:id="@+id/EmailId"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="25dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -57,6 +57,8 @@
         android:layout_marginHorizontal="25dp"
         app:layout_constraintTop_toBottomOf="@id/EmailId"
         android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:hint="Password"
         android:id="@+id/password"
         />
