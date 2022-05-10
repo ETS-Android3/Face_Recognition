@@ -17,7 +17,7 @@ A minimalistic Face Recognition module which can be easily incorporated in any A
 
 ## Model 
 - MobileFaceNet : [Research Paper](https://arxiv.org/ftp/arxiv/papers/1804/1804.07573.pdf)
-- [Implementation](https://github.com/sirius-ai/MobileFaceNet_TF)
+- [Implementation](https://https://github.com/RohanRay015/Face_Recognition.git)
 
 ## Installation
 
@@ -26,7 +26,7 @@ Use Import from Version Control in Android Studio or Clone repo and open the pro
 ```bash
 git clone https://github.com/RohanRay015/Hackthon.git
 ```
-Application file : [Face_Recognition.apk](https://drive.google.com/file/d/1l1ldvOUkI2y8WIq2IowxEiiAdhU2twYH/view?usp=sharing)
+Application file : [Face_Recognition.apk](https://drive.google.com/drive/folders/1-lNRA6FCa3MNkdZe4SPLUBzejUicu2Y4)
 
 ## Usage
 <table>
