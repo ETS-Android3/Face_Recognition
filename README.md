@@ -17,6 +17,7 @@ A minimalistic Face Recognition module which can be easily incorporated in any A
 
 ## Model 
 - MobileFaceNet : [Research Paper](https://arxiv.org/ftp/arxiv/papers/1804/1804.07573.pdf)
+- Apk file: - (https://drive.google.com/drive/folders/1-lNRA6FCa3MNkdZe4SPLUBzejUicu2Y4)
 
 ## Installation
 
