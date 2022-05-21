@@ -1,8 +1,11 @@
-# Real Time Face Recognition App using TfLite
+# It is Missing Child Recognization Application using Real Time Face Recognition App using TfLite
 
-A minimalistic Face Recognition module which can be easily incorporated in any Android project.
+A minimalistic child helpline application with Face Recognition module which can be easily incorporated in any Android project.
 
 ## Key Features 
+- Government Level Application
+- It has database to save a record of every user's login info
+- This application will create Transaction ID hash code to the block chain to secure user's data during registration
 - Fast and very accurate.
 - No re-training required to add new Faces.
 - Save Recognitions for further use.
